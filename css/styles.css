@@ -57,6 +57,7 @@ body {
     width: 276px;
     height: 45px;
     background-color: #fff;
+    border-radius: 7px;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -80,11 +81,21 @@ body {
     line-height: 19px;
     color: #555555;
 }
-
+.search-input {
+    font-size: 14px;
+    line-height: normal;
+    border: 0;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    border-radius: 60px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
 .lang {
     display: flex;
     padding: 3px;
     border-radius: 39px;
+    margin-right: 25px;
     background-color: #dce6ff;
 }
 .lang-uz {
@@ -92,9 +103,21 @@ body {
     height: 30px;
     font-size: 13px;
     text-align: center;
+    background-color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+    border-radius: 50%;
+}
+.lang-link {
+    background-color: #fff;
+    color: #000;
 }
 .lang-ru {
-    
+    text-decoration: none;
+    line-height: 30px;
+    color: #a6a6a6;
+    margin-right: 13px;
+    margin-left: 8px;
 }
 .access-icon {
     display: inline-block;
@@ -121,7 +144,6 @@ body {
 .main-link {
     text-decoration: none;
     width: 90px;
-    font-family: Rubik;
     text-align: center;
     font-size: 18px;
     line-height: 21px;
