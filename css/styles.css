@@ -19,7 +19,7 @@ body {
     line-height: 22px;    
     color: #4a4b4c;    
     background-color: #fff;                       
-    font-family: 'Rubik', Arial, sans-serif;
+    font-family: 'Rubik', "Arial", "sans-serif";
 }
 
 *:focus {
@@ -68,7 +68,7 @@ body {
     height: 45px;
     background-color: #fff;
     border-radius: 7px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', "Arial", sans-serif;
     transition: 0.5s ease;
 }
 
@@ -113,6 +113,10 @@ body {
     padding-left: 40px;
     padding-right: 20px;
     margin-right: 25px;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 15px center;
 }
 
 .lang {
@@ -245,7 +249,10 @@ body {
     flex-wrap: wrap;
     padding: 0;
     margin: -10px;
+    margin-bottom: 60px;
 }
+
+
 
 .hero-the-heading {
     width: 393px;
@@ -321,9 +328,10 @@ body {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 60px 75px;
+    background-position: center center;
     padding: 25px 70px 25px 25px;
     border-radius: 8px;
+    margin-bottom: 60px;
 }
 
 .cta-text {
@@ -333,7 +341,12 @@ body {
 }
 
 .cta-text-links {
+    margin: 0;
+    width: 404px;
+    color: #000000;
     font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
 }
 
 .button-orange {
@@ -366,11 +379,9 @@ body {
 
 .global-data {
     display: flex;
-    width: 797px;
     padding: 20px 20px 20px 17px;
     border-radius: 15px;
     background-color: #F6F6F6;
-    list-style: none;
     margin-bottom: 10px;
     margin-right: 10px;
 }
@@ -497,7 +508,6 @@ body {
 }
 
 .brief-title {
-    width: 96px;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -511,7 +521,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
-    margin: 8px 0px;
+    margin-bottom: 8px;
     transition: 0.2s ease;
     text-decoration: none;
 }
@@ -539,10 +549,17 @@ body {
     margin-top: 0;
 }
 
+.img-rek {
+    display: block;
+    width: 1200px;
+    height: 128px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
 .advertising-img {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: block;
+    padding: 0;
 }
 
 .promo-img {
@@ -813,6 +830,9 @@ body {
     border-bottom: 1px solid #D2D2D2;
 }
 
+.connection-sections:last-child {
+    border-bottom: none;
+}
 .connection-sections-heading {
     font-size: 20px;
     line-height: 24px;
@@ -822,7 +842,20 @@ body {
 .connection-sections-text {
     margin: 0;
     font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-color: #000000;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+    /* RETINA-CTA */
+.@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .cta {
+        background-image: url("../img/bg@2.jpg");
+    }
 }
